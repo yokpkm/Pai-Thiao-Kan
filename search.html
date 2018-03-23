@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SEARCH</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.css'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Athiti:500" rel="stylesheet">
+
+  <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+      <link rel="stylesheet" href="./assets/css/search.css">
+
+  
+</head>
+
+<body>
+
+  <div class="bg"></div>
+
+  <div class="opacity"></div>
+
+  <button class="btn btn-default submit">ค้นหา</button>
+
+<!-- ***************************** -->
+  <div class="mapp">
+  <i class="fa fa-map-marker map1"></i>
+  <i class="fa fa-map-marker map2"></i>
+  <i class="fa fa-map-marker map3"></i>
+  <i class="fa fa-map-marker map4"></i>
+  <i class="fa fa-map-marker map5"></i>
+  <i class="fa fa-map-marker map6"></i>
+  <i class="fa fa-map-marker map7"></i>
+  <i class="fa fa-map-marker map8"></i>
+  <i class="fa fa-map-marker map9"></i>
+  <i class="fa fa-map-marker map10"></i>
+  </div>
+
+<!-- *********************** -->
+    <div class="parent2">
+
+  <div class="box show-login">
+    <a href="login.html">       
+          <div class="test1"><i class="fa fa-sign-in"></i></div>
+       
+      </a>
+  </div>
+
+  <div class="box show-about">
+      <a href="about.html">
+        <div class="test2"><i class="fa fa-user"></i></div>
+      </a>
+    </div>
+
+    <div class="box show-contact">
+      <a href="contact.html">
+        <div class="test3"><i class="fa fa-envelope"></i></div>
+      </a>
+    </div>
+
+    <div class="mask2">
+        <div class="menu2" style="font-size: 25px; color: #FAE951; height: 50px; width: 50px;">☰</div>
+        
+      </div>
+     
+  </div>
+
+<!-- ******************* -->
+
+  
+  <audio  id="myAudio" src="/assets/sound/sound.mp3" 
+  preload="auto" autoplay loop>
+  </audio>
+  <div class="shape"> </div>
+
+  <div class="audio">
+      <a onClick="togglePlay()">
+        <btn class="btn btn-default btn onBtn bb" style="color: black; background-color: transparent; cursor: pointer; font-size: 30px; text-align: center; margin-left: 0.6em; color: #FAE951; border: none; display: block; position: fixed; z-index: 500; margin-top: -10px;"><i class="fa fa-volume-up volume onBtn"></i>                  
+        </btn>
+      </a>
+
+  </div>
+
+<!-- ******************** -->
+   <a href="index.html">
+    <div class="shape2">
+    <div class="back">
+   <i class="fa fa-chevron-left" style="color: #FAE951;"></i>
+    </div>
+    </div>
+  </a>
+  
+
+<!-- ******************** -->
+
+  <a href="index.html">
+  <img src="./assets/images/index/logo.png" class="logo">
+  </a>
+  
+    <main>
+
+    <img src="./assets/images/search/map.png" class="map">
+
+    <i class="fa fa-search search"></i><h1> อยากไปไหนก็ค้นหาเลย </h1>
+
+  
+  <form amily: Ahiti;">
+
+    <select onchange="set_country(this,country,city_state)" id="region">
+      <option value="" selected="selected">เลือกหัวข้อ</option>
+    </select>
+  
+    <select name="country" disabled="disabled" onchange="print_country(country,this)"></select>
+    
+    <select style="display: none;" name="city_state" disabled="disabled" onchange="print_country(country,this)"></select>
+  </form>
+</main>
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+
+<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  
+    <script  src="./assets/js/search.js"></script>
+
+</body>
+</html>

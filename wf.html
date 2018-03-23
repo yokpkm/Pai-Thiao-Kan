@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WATERFALL</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+	<meta name="viewport" content="width=device-width">
+
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<link rel="stylesheet" href="./assets/css/wf.css">\
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Athiti:500" rel="stylesheet">
+
+	<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+ 	<meta name="viewport" content="width=device-width">
+
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+ 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+	
+
+<!-- ************************ -->
+	<div class="parent2">
+
+	<div class="box show-login">
+		<a href="login.html">	      
+	        <div class="test1"><i class="fa fa-sign-in"></i></div>
+	     
+	    </a>
+	</div>
+
+	<div class="box show-about">
+      <a href="about.html">
+        <div class="test2"><i class="fa fa-user"></i></div>
+      </a>
+    </div>
+
+    <div class="box show-contact">
+      <a href="contact.html">
+        <div class="test3"><i class="fa fa-envelope"></i></div>
+      </a>
+    </div>
+
+    <div class="mask2">
+      	<div class="menu2" style="font-size: 25px; color: #FAE951">☰</div>
+      	
+      </div>
+     
+	</div>
+
+<!-- ******************* -->
+
+	
+	<audio  id="myAudio" src="/assets/sound/sound.mp3" 
+	preload="auto" autoplay loop >
+	</audio>
+	<div class="shape"> </div>
+
+	<div class="audio">
+	    <a onClick="togglePlay()">
+		    <btn class="btn btn-default btn onBtn bb" style="color: black; background-color: transparent; cursor: pointer; font-size: 30px; text-align: center; margin-left: 0.6em; color: #FAE951; border: none; display: block; position: fixed;"><i class="fa fa-volume-up volume onBtn"></i>		    	    		
+		    </btn>
+   		</a>
+
+	</div>
+
+<!-- ******************** -->
+	 <a href="index.html">
+	 	<div class="shape2">
+	 	<div class="back">
+	 <i class="fa fa-chevron-left" style="color: #FAE951;"></i>
+	 	</div>
+		</div>
+	</a>
+	
+
+<!-- ******************** -->
+
+	<a href="index.html">
+	<img src="./assets/images/index/logo.png" class="logo">
+	</a>
+	
+	<img src="./assets/images/mountain/map.png" class="picmap">
+
+<!-- ****************************** -->
+	
+
+	<li class="pin-map-hover requirement" >
+    	<i class="fa fa-map-marker map1" onclick="place(1)">
+	</i>
+	<span class="data-name-map">น้ำตกห้วยแม่ขมิ้น</span>
+    </li>
+	
+	
+    <li class="pin-map-hover requirement">
+	 	<i class="fa fa-map-marker map2" onclick="place(2)"></i>
+	 <span class="data-name-map2">น้ำตกทีลอซู</span>
+	</li>
+
+	<li class="pin-map-hover requirement">
+		<i class="fa fa-map-marker map3" onclick="place(3)"></i>
+	<span class="data-name-map3">น้ำตกแม่ยะ</span>
+	</li>	
+
+	<li class="pin-map-hover requirement">
+		<i class="fa fa-map-marker map4" onclick="place(4)"></i>
+	<span class="data-name-map4">น้ำตกเอราวัณ</span>
+	</li>		
+
+	<li class="pin-map-hover requirement">
+		<i class="fa fa-map-marker map5" onclick="place(5)"></i>
+	<span class="data-name-map5">น้ำตกแม่สุรินทร์</span>
+	</li>	
+
+	<li class="pin-map-hover requirement">
+		<i class="fa fa-map-marker map6" onclick="place(6)"></i>
+	<span class="data-name-map6">น้ำตกคลองลาน</span>
+	</li>	
+
+	<li class="pin-map-hover requirement">	
+		<i class="fa fa-map-marker map7" onclick="place(7)"></i>
+	<span class="data-name-map7">น้ำตกขุนพอง</span>
+	</li>	
+
+	<li class="pin-map-hover requirement">
+		<i class="fa fa-map-marker map8" onclick="place(8)"></i>
+	<span class="data-name-map8">น้ำตกเหวนรก</span>
+	</li>	
+
+	<li class="pin-map-hover requirement">	
+		<i class="fa fa-map-marker map9" onclick="place(9)"></i>
+	<span class="data-name-map9">น้ำตกเขาสอยดาว</span>
+	</li>	
+
+	<li class="pin-map-hover requirement">	
+	  <i class="fa fa-map-marker map10" onclick="place(10)"></i>
+	<span class="data-name-map10">น้ำตกกรุงชิง</span>
+	</li>
+	
+
+<!-- ************************ -->
+
+
+<div class="container">
+	<!-- **********************-1-************************ -->
+
+	  <section class="background" id="1">
+	    <div class="content-wrapper">
+
+	    	
+
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	น้ำตกห้วยแม่ขมิ้น
+	      </p>
+
+	      <div>
+        	<a href="" class="test-hover-like">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	    <p class="content-subtitle" style="text-indent: 3.5em;">
+
+	     ตั้งอยู่บริเวณที่ทำการอุทยานฯ ริมทะเลสาบเขื่อนศรีนครินทร์ ห่างจากอำเภอเมืองกาญจนบุรีประมาณ 108 กิโลเมตร น้ำตกห้วยแม่ขมิ้นมีสภาพสวยงามเป็นอย่างยิ่ง ทั่วบริเวณร่มรื่นด้วยพันธุ์ไม้ป่านานาชนิด น้ำตกไหลมา จากต้นน้ำของเทือกเขากะลาซึ่งเป็นป่าดิบเขาแล้ง ทางทิศตะวันออกของอุทยานฯ และไหลลงสู่อ่างเก็บน้ำ เขื่อนศรีนครินทร์ นับเป็นน้ำตกที่สวยที่สุดแห่งหนึ่ง 
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="/wf01/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	     	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+		
+
+
+	      	<!-- <section id="section05" onclick="gonextpage()" class="demo">
+				<a href="#"><span></span></a>
+			</section> -->
+	    </div>
+	  </section>
+
+	<!-- ********************-2-************************   -->
+
+	  <section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	น้ำตกทีลอซู
+	      </p>
+
+	      <div>
+        	<a href="" class="test-hover-like" style="margin-left: 400px;">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3.5em;">
+
+	      ตั้งอยู่ในเขตรักษาพันธุ์สัตว์ป่าอุ้มผาง จังหวัดตาก ห่างจากที่ทำการเขตฯ 1.5 กิโลเมตร มีลักษณะเป็นน้ำตกเขาหินปูนขนาดใหญ่ ตั้งอยู่บนความสูงจากระดับทะเลปานกลาง 900 เมตร เกิดจากลำน้ำห้วยกล้อท้อทั้งสายที่ไหลแผ่ปกคลุมพื้นที่หน้าผากว้างกว่า 500 เมตร ก่อนที่จะทะยานลงสู่หน้าผาสูงชันลดหลั่นเป็นชั้นๆ สูงกว่า 300 เมตร
+นับเป็นน้ำตกที่มีความยิ่งใหญ่และสวยที่สุดในเมืองไทย 
+
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="/wf02/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	     	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+			<!-- <a href="#1" class="cd-top" style="z-index: 500;">
+				<i class="fa fa-chevron-up" style="color: #fff; z-index: 500;"></i>
+
+			</a> -->
+
+	    </div>
+	  </section>
+
+	 <!-- ***********************-3-****************************  -->
+
+	  <section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      <i class="fa fa-map-marker"></i>
+	      	น้ำตกแม่ยะ
+
+
+	  	  </p>
+
+	  	  <div>
+        	<a href="" class="test-hover-like" style="margin-left: 400px;">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3.5em;">
+
+	      ตั้งอยู่ในเขตอุทยานแห่งชาติดอยอินทนนท์ จังหวัดเชียงใหม่ ได้ชื่อว่าเป็นน้ำตกที่สวยอันดับต้นๆ ของไทย เป็นน้ำตกขนาดใหญ่ที่มีความสวยงามมาก มีขนาดใหญ่และสวยที่สุด และสูงที่สุดของของบรรดาน้ำตกในอุทยานแห่งชาติดอยอินทนนท์ ใครได้แวะไป ดอยอินทนนท์ระหว่างขึ้นดอยไม่ควรพลาด เคยได้รับการจัดอันดับเป็นน้ำตกที่สวยที่สุดของประเทศไทย บริเวณน้ำตกแม่ยะ เป็นป่าไม้พรรณไม้ร่มรื่นเหมาะสำหรับการไปเที่ยวพักผ่อนหย่อนใจ  
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="/wf03/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	     	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+			<!-- <a href="#0" class="cd-top" style="z-index: 500;">
+				<i class="fa fa-chevron-up" style="color: #fff;"></i>
+
+			</a> -->
+	    </div>
+	  </section>
+
+	  <!-- *******************-4-************************** -->
+
+	  <section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+			<i class="fa fa-map-marker"></i>
+	      	น้ำตกเอราวัณ
+	      
+
+	  	  </p>
+
+	  	  <div>
+        	<a href="" class="test-hover-like" style="margin-left: 450px;">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3.5em;">
+
+	      ตั้งอยู่ที่อำเภอศรีสวัสดิ์ จังหวัดกาญจนบุรี แบ่งออกเป็นชั้นๆ ได้ 7 ชั้นเป็นน้ำตกขนาดใหญ่เดิมมีชื่อว่า น้ำตกสะด่องม่องลาย ตามชื่อลำห้วยม่องล่ายซึ่งเป็นต้นน้ำของน้ำตกที่เกิดจากยอดเขาตาม่องล่ายในเทือกเขาสลอบ สายน้ำจะไหลมาตามชั้นหินเป็นระยะทาง ประมาณ 1,500 เมตร แบ่งออกเป็นชั้นใหญ่ๆ 7 ชั้น แต่ละชั้นมีความสวยงามร่มรื่นไปด้วยไม้นานาพันธุ์ ทั้งเถาวัลย์พันเกี่ยวทอดตัวไปบนต้นไม้ใหญ่ เป็นบรรยากาศที่เรียกเอาความมีคุณค่าของป่าเขาลำเนาออกมาเลยทีเดียว
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="/wf04/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	      	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+	    </div>
+	  </section>
+
+	<!-- *********************-5-**************************  -->
+
+	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	น้ำตกแม่สุรินทร์
+
+	      </p>
+
+	      <div>
+        	<a href="" class="test-hover-like">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3.5em;">
+	      		ตั้งอยู่ที่เขตอุทยานแห่งชาติน้ำตกแม่สุรินทร์ ครอบคลุมพื้นที่อำเภอขุนยวมและอำเภอเมือง จังหวัดแม่ฮ่องสอน มีสภาพพื้นที่ส่วนใหญ่เป็นป่าเขาสลับซับซ้อน มีภูเขาหินและหน้าผาน้อยใหญ่สูงชันในลักษณะทั้งที่แตกต่างกันและคล้ายกันหลายแห่ง โดยเฉพาะที่ดอยวิดจา ดอยปุงถุ่น จะมีหน้าผาสูงชันมาก น้ำตกแห่งนี้ตั้งอยู่ท่ามกลางผืนป่าอันบริสุทธิ์ที่โอบล้อม
+นับเป็นน้ำตกที่สูงที่สุดแห่งหนึ่งของเมืองไทย
+
+	     
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="/wf05/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	     	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+	    </div>
+	  </section>
+
+	<!-- **********************-6-*****************************   -->
+
+	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	น้ำตกคลองลาน
+
+	      </p>
+
+	      <div>
+        	<a href="" class="test-hover-like">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3.5em;">
+
+	      ตั้งอยู่ที่อุทยานแห่งชาติคลองลาน อำเภอคลองลาน จังหวัดกำแพงเพชร ด้วยอุทยานฯ คลองลานมีสภาพป่าที่มีความอุดมสมบูรณ์และมีเนื้อที่ 187,500 ไร่ สภาพป่าโดยทั่วไปนั้น ประกอบด้วยป่าเต็งรังป่าดงดิบแล้งและป่าเบญจพรรณสัตว์ป่านานาชนิด  และเป็นป่าต้นน้ำของลำน้ำหลายสาย  ที่นี่จึงเป็นอุทยานแห่งชาติของกำแพงเพชรที่เปิดโอกาส ให้นักท่องเที่ยวเข้าไปเก็บเกี่ยวความสุขจากความบริสุทธิ์ของธรรมชาติ 
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="/wf06/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	     	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+	    </div>
+	  </section>
+
+	  <!-- **********************-7-**************************   -->
+
+	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	น้ำตกขุนพอง
+
+
+	      </p>
+
+	      <div>
+        	<a href="" class="test-hover-like" style="margin-left: 445px">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3.5em;">
+
+	     ตั้งอยู่ที่อุทยานแห่งชาติภูกระดึง อำเภอภูกระดึง จังหวัดเลย และเป็นน้ำตกใหญ่ที่สุดบนภูกระดึง อยู่ทางทิศตะวันตก เกิดจากลำธารหลายสายที่ไหลมารวมกัน ได้แก่ วังกวาง ธารสวรรค์ ธารพระองค์ และธารถ้ำสอ  เป็นน้ำตกที่อยู่ในป่าดงดิบ
+ในช่วงฤดูหนาว ต้นเมเปิลจะเปลี่ยนสีใบจากเขียวเป็นแดง ร่วงหล่นทั่วบริเวณน้ำตก อันเป็นที่มาของภาพงดงามซึ่งเป็นสัญลักษณ์หนึ่งของภูกระดึง 
+นับได้ว่าน้ำตกแห่งนี้ มีความสวยงาม มีธารน้ำใสเย็นและปลอดภัยในการลงเล่นน้ำ 
+
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="/wf07/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	      	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+	    </div>
+	  </section>
+
+	  <!-- ************************-8-************************   -->
+
+	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	น้ำตกเหวนรก
+
+
+
+	      </p>
+
+	      <div>
+        	<a href="" class="test-hover-like" style="margin-left: 455px">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3.5em;">
+
+	      ความยิ่งใหญ่ของน้ำตกเหวนรกไม่เพียงเป็นน้ำตกที่มีขนาดใหญ่ที่สุดในอุทยานแห่งชาติเขาใหญ่ อำเภอปากช่อง จังหวัดนครราชสีมา และยังเป็นน้ำตกที่มีขนาดใหญ่ที่สุดในภาคกลสง ในแต่ละวันมีนักท่องเที่ยวเดินทางสู่อุทยานแห่งชาติเขาใหญ่มากมายเพื่อรอชมการไหลของสายน้ำสีขาว อันเกิดจากลำธารหลากสายหลากไหลมารวมกัน เมื่อมาถึงหน้าผาก็ทิ้งตัวลงสู่เบื้องล่าง ตั้งฉากกับพื้นดิน 90 องศา บันดาลให้เกิดเสียงดังกึกก้องพร้อมๆ กับละอองน้ำฟุ้งกระจายตลบอบอวลอยู่ในทุกอณูอากาศบริเวณนั้น
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="/wf08/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	      	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+	    </div>
+	  </section>
+
+	  <!-- ************************-9-************************   -->
+
+	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	น้ำตกเขาสอยดาว
+
+	      </p>
+
+	      <div>
+        	<a href="" class="test-hover-like">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	     <p class="content-subtitle" style="text-indent: 3.5em;">
+
+	      ตั้งอยู่ในเขตรักษาพันธุ์สัตว์ป่าเขาสอยดาว อำเภอสอยดาว จังหวัดจันทบุรี น้ำตกอยู่ห่างจากที่ทำการประมาณ 4 กิโลเมตร มี 16 ชั้น บริเวณธารน้ำตกมีผีเสื้อจำนวนมาก เหมาะสำหรับการดูผีเสื้อและศึกษาพรรณไม้ ซึ่งพื้นที่เขตรักษาพันธุ์สัตว์ป่าเขาสอยดาวนั้นมีสภาพป่าเบญจพรรณ ป่าเต็งรังและสมุนไพร เช่น กระชายป่า กระวาน สัตว์ป่า ไก่ฟ้าหลังขาวจันทบูรณ์ นกสาริกาเขียวหางสั้น และสภาพภูมิประเทศเป็นภูเขาสลับซับซ้อน 
+		จึงทำให้เป็นน้ำตกที่มีทั้งความงามและความตื่นเต้นท้าทาย 
+
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="/wf09/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	      	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+	    </div>
+	  </section>
+
+	  <!-- ***********************-10-*************************   -->
+
+	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	น้ำตกกรุงชิง
+
+
+	      </p>
+
+	      <div>
+        	<a href="" class="test-hover-like" style="margin-left: 433px;">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3.5em;">
+
+	      ตั้งอยู่ในเขตพื้นที่ของอุทยานแห่งชาติเขาหลวง จังหวัดนครศรีธรรมราช เป็นแหล่งท่องเที่ยวที่สวยงามที่ มีผู้คนมาเยือนไม่ขาดสาย ด้วยน้ำตกขนาด 7 ชั้น ที่ลดหลั่นความสูงลงมาต่างๆ ระดับกัน ในป่าเขตนี้ยังเป็นเส้นทางเดินศึกษาธรรมชาติของป่าที่อุดมสมบูรณ์อีกด้วย เนื่องจาก มีพืชพรรณไม้ต่างๆ ให้ได้ศึกษา นับได้ว่าเป็นอีกหนึ่งน้ำตกที่มีความสวยงามและมีชื่อเสียงมากเป็นอันดับต้นๆ ของจังหวัด
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="/wf10/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	      	<!-- <section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section> -->
+	    </div>
+	  </section>
+
+
+	 <!-- ************************-11-************************   -->
+
+<!-- 	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">11</p>
+	      <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
+	    </div>
+	  </section> -->
+
+	 <!-- *************************************************  -->
+
+
+
+
+
+
+</div> <!-- *****end div container**** -->
+		 
+
+
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+
+<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+    $('li.requirement').hover(function () {
+        $(this).find('span').show();
+    }, function () {
+        $(this).find('span').hide();
+    });
+});
+</script>
+
+<script src="./assets/js/mountain.js"></script>
+
+</body>
+</html>

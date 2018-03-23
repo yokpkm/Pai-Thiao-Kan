@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MOUNTAIN</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+	<meta name="viewport" content="width=device-width">
+
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<link rel="stylesheet" href="./assets/css/mountain.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Athiti:500" rel="stylesheet">
+
+	<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+ 	<meta name="viewport" content="width=device-width">
+
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+ 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<!-- ************************** -->
+	
+
+<!-- ************************** -->
+	
+	<div class="parent2">
+
+	<div class="box show-login">
+		<a href="login.html">	      
+	        <div class="test1"><i class="fa fa-sign-in"></i></div>
+	    </a>
+	</div>
+
+	<div class="box show-about">
+      <a href="about.html">
+        <div class="test2"><i class="fa fa-user"></i></div>
+      </a>
+    </div>
+
+    <div class="box show-contact">
+      <a href="contact.html">
+        <div class="test3"><i class="fa fa-envelope"></i></div>
+      </a>
+    </div>
+
+    <div class="mask2">
+      	<div class="menu2" style="font-size: 25px; color: #FAE951">☰</div>
+      	
+      </div>
+     
+	</div>
+
+<!-- ******************* -->
+
+	
+	<audio  id="myAudio" src="/assets/sound/sound.mp3" 
+	preload="auto" autoplay loop >
+	</audio>
+	<div class="shape"> </div>
+
+	<div class="audio">
+	    <a onClick="togglePlay()">
+		    <btn class="btn btn-default btn onBtn bb" style="color: black; background-color: transparent; cursor: pointer; font-size: 30px; text-align: center; margin-left: 0.6em; color: #FAE951; border: none; display: block; position: fixed;"><i class="fa fa-volume-up volume onBtn"></i>		    	    		
+		    </btn>
+   		</a>
+
+	</div>
+
+<!-- ******************** -->
+	 <a href="index.html">
+	 	<div class="shape2">
+	 	<div class="back">
+	 <i class="fa fa-chevron-left" style="color: #FAE951;"></i>
+	 	</div>
+		</div>
+	</a>
+	
+
+<!-- ******************** -->
+
+	<a href="index.html">
+	<img src="./assets/images/index/logo.png" class="logo">
+	</a>
+	
+	<img src="./assets/images/mountain/map.png" class="picmap">
+
+<!-- ****************************** -->
+	
+
+	<li class="pin-map-hover requirement" >
+    	<i class="fa fa-map-marker map1" onclick="place(1)">
+	</i>
+	<span class="data-name-map">ดอยอินทนนท์</span>
+    </li>
+	
+	
+    <li class="pin-map-hover requirement">
+	 	<i class="fa fa-map-marker map2" onclick="place(2)"></i>
+	 <span class="data-name-map2">ดอยฟ้าห่มปก</span>
+	</li>
+
+	<li class="pin-map-hover requirement">
+		<i class="fa fa-map-marker map3" onclick="place(3)"></i>
+	<span class="data-name-map3">ดอยหลวงเชียงดาว</span>
+	</li>	
+
+	<li class="pin-map-hover requirement">
+		<i class="fa fa-map-marker map4" onclick="place(4)"></i>
+	<span class="data-name-map4">ยอดเขาโมโกจู</span>
+	</li>		
+
+	<li class="pin-map-hover requirement">
+		<i class="fa fa-map-marker map5" onclick="place(5)"></i>
+	<span class="data-name-map5">ดอยภูแว</span>
+	</li>	
+
+	<li class="pin-map-hover requirement">
+		<i class="fa fa-map-marker map6" onclick="place(6)"></i>
+	<span class="data-name-map6">ยอดเขาหลวง</span>
+	</li>	
+
+	<li class="pin-map-hover requirement">	
+		<i class="fa fa-map-marker map7" onclick="place(7)"></i>
+	<span class="data-name-map7">ดอยเวียงผา</span>
+	</li>	
+
+	<li class="pin-map-hover requirement">
+		<i class="fa fa-map-marker map8" onclick="place(8)"></i>
+	<span class="data-name-map8">ภูแผงม้า</span>
+	</li>	
+
+	<li class="pin-map-hover requirement">	
+		<i class="fa fa-map-marker map9" onclick="place(9)"></i>
+	<span class="data-name-map9">ดอยมด</span>
+	</li>	
+
+	<li class="pin-map-hover requirement">	
+	  <i class="fa fa-map-marker map10" onclick="place(10)"></i>
+	<span class="data-name-map10">ภูสอยดาว</span>
+	</li>
+
+<!-- ************************ -->
+
+<div class="container">
+	<!-- **********************-1-************************ -->
+
+	  <section class="background" id="1">
+	    <div class="content-wrapper">
+
+	    	
+
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	ดอยอินทนนท์
+
+	      </p>
+
+	   <!--  <a href="#" class="btnn fill-transparent name hover-fill-disable hover-text-red">
+            <i class="fa fa-heart test name" aria-hidden="true"> 
+
+             3,910
+
+        	</i>
+        </a> -->
+
+        <div>
+        	<a href="" class="test-hover-like">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	    <p class="content-subtitle" style="text-indent: 3em;">
+
+	      ตั้งอยู่ในเขตอุทยานแห่งชาติดอยอินทนนท์ จังหวัดเชียงใหม่ เป็นยอดเขาที่สูงที่สุดในประเทศไทย และยังเป็นส่วนหนึ่งของเทือกเขาหิมาลัย พื้นที่ส่วนใหญ่ประกอบไปด้วยสภาพพื้นป่าที่หลากหลาย และมีสภาพอากาศที่หนาวเย็นเกือบตลอดทั้งปี จึงเป็นเสน่ห์ดึงดูดที่ทำให้นักท่องเที่ยวต่างอยากที่จะมาพิชิตยอดดอยอินทนนท์กันไม่ขาดสาย
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="/mountain01/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+
+
+	      	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+	<!-- <div id="bang">
+    	<h1 class="test" id="changeText" style="background: #0000009e; border-radius: 5px; padding: 13px;">
+    	คลิกเลือกสถานที่ได้ที่ <i class="fa fa-map-marker mark1"></i>
+    	</h1>
+ 	</div> -->
+
+	    </div>
+	  </section>
+
+	<!-- ********************-2-************************   -->
+
+	  <section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	ดอยฟ้าห่มปก
+
+
+	       <div>
+        	<a href="" class="test-hover-like">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3em;">
+
+			      ที่ตั้งอยู่ในเขตของอุทยานแห่งชาติดอยฟ้าห่มปก จังหวัดเชียงใหม่ 	บนยอดดอยจะเห็นทิวทัศน์มีจุดชมทะเลหมอก ชมพระอาทิตย์ และจุดชมวิว มีอากาศหนาวเย็นตลอดทั้งปี มีลมแรง อีกหนึ่งเสน่ห์ของ ดอยฟ้าห่มปกคือมีพืชพันธุ์และสัตว์ป่าหายากและที่น่าสนใจนานาชนิด เช่น เทียนหาง ผีเสื้อมรกตผ้าห่มปก และนกปีกแพรสีม่วง  เป็นต้น
+ 
+
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="./mountain02/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	     	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+			<!-- <a href="" class="cd-top" style="z-index: 500;">
+				<i class="fa fa-chevron-up" style="color: #fff; z-index: 500;"></i>
+
+			</a> -->
+
+		<!-- <div id="bang">
+    	<h1 class="test" id="changeText" style="background: #0000009e; border-radius: 5px; padding: 13px;">
+    	คลิกเลือกสถานที่ได้ที่ <i class="fa fa-map-marker mark1"></i>
+    	</h1>
+	 	</div>	 -->
+
+	    </div>
+	  </section>
+
+	 <!-- ***********************-3-****************************  -->
+
+	  <section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      <i class="fa fa-map-marker"></i>
+	      	ดอยหลวงเชียงดาว
+
+
+	  	  </p>
+
+	  	   <div>
+        	<a href="" class="test-hover-like" style="margin-left: 520px;">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3em;">
+
+	     	ตั้งอยู่ในเขตพื้นที่อุทยานเชียงดาว จังหวัดเชียงใหม่ เป็นที่ตั้งของเขตรักษาพันธุ์สัตว์ป่าเชียงดาว จีงเต็มไปด้วยผืนป่าและไม้นานาพันธุ์ อีกทั้งยังมียอดเขาเล็กใหญ่โดยรอบปกคลุมด้วยหมอกจางๆ พร้อมนกหลากหลายชนิดให้ได้ชื่นชม คนรักธรรมชาติไม่ควรพลาด คุณจะได้สัมผัสกับสิ่งเหล่านี้อย่างใกล้ชิดแน่นอน
+
+
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="./mountain03/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	     	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+			<!-- <a href="#0" class="cd-top" style="z-index: 500;">
+				<i class="fa fa-chevron-up" style="color: #fff;"></i>
+
+			</a> -->
+
+			<!-- <div id="bang">
+    	<h1 class="test" id="changeText" style="background: #0000009e; border-radius: 5px; padding: 13px;">
+    	คลิกเลือกสถานที่ได้ที่ <i class="fa fa-map-marker mark1"></i>
+    	</h1>
+ 	</div>
+ -->
+	    </div>
+	  </section>
+
+	  <!-- *******************-4-************************** -->
+
+	  <section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+			<i class="fa fa-map-marker"></i>
+	      	ยอดเขาโมโกจู
+	      
+
+	  	  </p>
+
+
+	  	   <div>
+        	<a href="" class="test-hover-like">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+
+	      <p class="content-subtitle" style="text-indent: 3em;">
+
+	     ตั้งอยู่ในเขตพื้นที่อุทยานแห่งชาติแม่วงก์ มีพื้นที่ครอบคลุมจังหวัดนครสวรรค์และกำแพงเพชร ซึ่งเต็มไปด้วยผืนป่าและไม้นานาพันธุ์ อีกทั้งยังมียอดเขาเล็กใหญ่โดยรอบปกคลุมด้วยหมอกจาง ๆ ช่างเป็นทิวทัศน์ชวนฝันอย่างแท้จริง พร้อมมีนกหลากหลายชนิดให้ได้ชื่นชม คนรักธรรมชาติไม่ควรพลาด คุณจะได้สัมผัสกับสิ่งเหล่านี้อย่างใกล้ชิดแน่นอน
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="./mountain04/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	      	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+			<!-- <div id="bang">
+    	<h1 class="test" id="changeText" style="background: #0000009e; border-radius: 5px; padding: 13px;">
+    	คลิกเลือกสถานที่ได้ที่ <i class="fa fa-map-marker mark1"></i>
+    	</h1>
+ 	</div> -->
+
+	    </div>
+	  </section>
+
+	<!-- *********************-5-**************************  -->
+
+	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	ดอยภูแว
+
+	      </p>
+
+	       <div>
+        	<a href="" class="test-hover-like" style="margin-left: 350px;">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3em;">
+
+	      ตั้งอยู่ที่อำเภอเฉลิมพระเกียรติ จังหวัดน่าน ในเขตอุทยานแห่งชาติดอยภูคา เป็นยอดเขาทุ่งหญ้า ไม่มีต้นไม้ใหญ่ มีความงดงาม รูปทรงแปลกตา เต็มไปด้วยหินผา ทุ่งหญ้าที่เกาะกุม นักท่องเที่ยวจำนวนมากคุ้นหน้าคุ้นตากันดี ส่วนดอยภูแวนั้นก็มีนักเดินทางสายลุย สายผจญภัยจำนวนไม่น้อยที่เดินทางไปเยี่ยมเยือนชมความงามของดินแดนแห่งขุนเขา และสายหมอกแห่งนี้   
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="./mountain05/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	     	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+			<!-- <div id="bang">
+    	<h1 class="test" id="changeText" style="background: #0000009e; border-radius: 5px; padding: 13px;">
+    	คลิกเลือกสถานที่ได้ที่ <i class="fa fa-map-marker mark1"></i>
+    	</h1>
+ 	</div>
+
+	    </div> -->
+	  </section>
+
+	<!-- **********************-6-*****************************   -->
+
+	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	ยอดเขาหลวง
+
+	      </p>
+
+	       <div>
+        	<a href="" class="test-hover-like">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3em;">
+
+	     ตั้งอยู่ในเขตอุทยานแห่งชาติเขาหลวง จังหวัดนครศรีธรรมราช เป็นอุทยานที่มีความสำคัญเป็นอันดับต้นๆ ของเมืองไทยที่มีความหลากหลายทางชีวภาพที่สำคัญมากแห่งหนึ่งของโลก และได้รับรางวัลท่องเที่ยวยอดเยี่ยม ซึ่งยังคงความอุดมสมบูรณ์ เป็นใจกลางป่าดิบชื้น อันรกทึบของเขาหลวงนี้เอง ที่ได้ให้กำเนิดเฟินโบราณหลายชนิด ซึ่งเหลือรอดมาจนถึงยุคปัจจุบัน
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="./mountain06/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	     	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+		<!-- 	<div id="bang">
+    	<h1 class="test" id="changeText" style="background: #0000009e; border-radius: 5px; padding: 13px;">
+    	คลิกเลือกสถานที่ได้ที่ <i class="fa fa-map-marker mark1"></i>
+    	</h1>
+ 	</div> -->
+
+	    </div>
+	  </section>
+
+	  <!-- **********************-7-**************************   -->
+
+	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	ดอยเวียงผา
+
+
+	      </p>
+
+	       <div>
+        	<a href="" class="test-hover-like" style="margin-left: 400px;">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3em;">
+
+	     ตั้งอยู่ที่อุทยานแห่งชาติดอยเวียงผา ครอบคลุมพื้นที่อำเภอไชยปราการและอำเภอฝาง จังหวัดเชียงใหม่
+ทั้งนี้สภาพป่าทั่วไปนั้นจัดว่าอุดมสมบูรณ์สวยงาม เหมาะสำหรับผู้ที่ชื่นชอบการศึกษาธรรมชาติ โดยพื้นที่ส่วนใหญ่เป็นป่าดิบเขาและป่าเบญจพรรณ 
+อีกทั้งบริเวณนี้ยังเป็นแหล่งอาศัยของสัตว์ป่านานาชนิด 
+นักท่องเที่ยวสามารถชมทิวทัศน์อันงดงาม 
+
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="./mountain07/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	      	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+			<!-- <div id="bang">
+    	<h1 class="test" id="changeText" style="background: #0000009e; border-radius: 5px; padding: 13px;">
+    	คลิกเลือกสถานที่ได้ที่ <i class="fa fa-map-marker mark1"></i>
+    	</h1>
+ 	</div> -->
+
+	    </div>
+	  </section>
+
+	  <!-- ************************-8-************************   -->
+
+	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	ภูแผงม้า
+
+
+
+	      </p>
+
+	       <div>
+        	<a href="" class="test-hover-like" style="margin-left: 350px;">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3em;">
+
+	      ตั้งอยู่ในเขตพื้นที่อุทยานแห่งชาติภูหินร่องกล้า จังหวัดพิษณุโลก ภูแผงม้าอีกหนึ่งจุดชมวิวที่สูงที่สุดในเขตอุทยานแห่งชาติภูหินร่องกล้า
+ที่นี่ถือเป็นจุดชมพระอาทิตย์ขึ้นและตก ที่ล้อมไปด้วยวิวทิวทัศน์อันน่าประทับใจของทะเลหมอกยามเช้าในช่วงฤดูหนาว
+นับเป็นอีกหนึ่งจุดชมความงามบนเทือกเขาสูงที่ดีที่สุดแห่งหนึ่งของเมืองไทย ใครลองได้ไปแล้วไม่มีผิดหวัง
+
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="./mountain08/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	      	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+			<!-- <div id="bang">
+    	<h1 class="test" id="changeText" style="background: #0000009e; border-radius: 5px; padding: 13px;">
+    	คลิกเลือกสถานที่ได้ที่ <i class="fa fa-map-marker mark1"></i>
+    	</h1>
+ 	</div> -->
+
+	    </div>
+	  </section>
+
+	  <!-- ************************-9-************************   -->
+
+	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	ดอยมด
+
+	      </p>
+
+	       <div>
+        	<a href="" class="test-hover-like" style="margin-left: 350px;">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	     <p class="content-subtitle" style="text-indent: 3em;">
+
+	      ตั้งอยู่ในเขตพื้นที่อุทยานแห่งชาติขุนแจ จังหวัดเชียงราย 
+เป็นสถานที่ท่องเที่ยวที่ห้อมล้อมไปด้วยบรรยากาศธรรมชาติที่สวยงามเขียวขจี
+เต็มไปด้วยความสมบูรณ์ของผืนป่าทรัพยากรธรรมชาติและสัตว์ป่านานาชนิด  เหมาะกับนักเดินทางนักท่องเที่ยว ที่ต้องการท่องเที่ยวประเภทกิจกรรมเดินป่า การพิชิตยอดเขา หรือการท่องเที่ยวเชิงอนุรักษ์
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="./mountain09/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	      	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+			<!-- <div id="bang">
+    	<h1 class="test" id="changeText" style="background: #0000009e; border-radius: 5px; padding: 13px;">
+    	คลิกเลือกสถานที่ได้ที่ <i class="fa fa-map-marker mark1"></i>
+    	</h1>
+ 	</div> -->
+
+	    </div>
+	  </section>
+
+	  <!-- ***********************-10-*************************   -->
+
+	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">
+	      	<i class="fa fa-map-marker"></i>
+	      	ภูสอยดาว
+
+
+	      </p>
+
+	       <div>
+        	<a href="" class="test-hover-like" style="margin-left: 375px;">
+        		<i class="fa fa-heart"></i>
+        		<p style="margin-top: -20px; margin-right: -90px;">3,910</p>
+        	</a>
+        </div>
+
+	      <p class="content-subtitle" style="text-indent: 3em;">
+
+	     ตั้งอยู่ในเขตพื้นที่อุทยานแห่งชาติภูสอยดาว จังหวัดอุตรดิตถ์
+มีอากาศหนาวเย็นเกือบตลอดทั้งปี จุดเด่นล่อตาล่อให้นักท่องเที่ยวทุกคนอยากที่จะไปพิชิตยอดภูสอยดาวสักครั้ง นั่นคือการได้ชมทุ่งดอกไม้สีม่วงหรือดอกหงอนนาค และดอกไม้ป่าสวยๆ มากมายหลากหลายชนิด ที่ออกดอกชูช่อบานสลับสีสัน เป็นผืนป่าธรรมชาติที่มีความสมบูรณ์สวยงามอีกแห่งหนึ่ง 
+
+
+	  	</p>
+
+	  	<section class="buttons">
+	  		<div class="container">
+  			<a href="./mountain10/content.html" class="btn btn-2">อ่านต่อได้ที่นี่</a> 
+  			</div>
+		</section>
+
+	      	<section id="section05" class="demo">
+				<a href="#"><span></span></a>
+			</section>
+
+			<!-- <div id="bang">
+    	<h1 class="test" id="changeText" style="background: #0000009e; border-radius: 5px; padding: 13px;">
+    	คลิกเลือกสถานที่ได้ที่ <i class="fa fa-map-marker mark1"></i>
+    	</h1>
+ 	</div> -->
+
+	    </div>
+	  </section>
+
+
+	 <!-- ************************-11-************************   -->
+
+<!-- 	<section class="background">
+	    <div class="content-wrapper">
+	      <p class="content-title">11</p>
+	      <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
+	    </div>
+	  </section> -->
+
+	 <!-- *************************************************  -->
+
+
+
+
+
+
+</div> <!-- *****end div container**** -->
+		 
+
+
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+
+<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src="./assets/js/mountain.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+    $('li.requirement').hover(function () {
+        $(this).find('span').show();
+    }, function () {
+        $(this).find('span').hide();
+    });
+});
+</script>
+
+</body>
+</html>
